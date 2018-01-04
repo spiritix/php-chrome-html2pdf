@@ -1,4 +1,4 @@
-# PHP Chrome HTML2PDF
+# PHP Chrome HTML to PDF
 
 A PHP library for converting HTML to PDF using Google Chrome.
 
@@ -8,6 +8,24 @@ A PHP library for converting HTML to PDF using Google Chrome.
 [![Latest Stable Version](https://poser.pugx.org/spiritix/php-chrome-html2pdf/v/stable.svg)](https://packagist.org/packages/spiritix/php-chrome-html2pdf)
 [![Latest Unstable Version](https://poser.pugx.org/spiritix/php-chrome-html2pdf/v/unstable.svg)](https://packagist.org/packages/spiritix/php-chrome-html2pdf)
 [![License](https://poser.pugx.org/spiritix/php-chrome-html2pdf/license.svg)](https://packagist.org/packages/spiritix/php-chrome-html2pdf)
+
+## Requirements
+
+- PHP 7.0+ with enabled program execution functions (proc_open) and 'fopen wrappers'
+- Node.js 7.6+
+- A few [OS specific dependencies](https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md)
+
+## Installation
+
+HtmlToPdf can be installed via [Composer](http://getcomposer.org) by requiring the
+`spiritix/php-chrome-html2pdf` package in your project's `composer.json`.
+Or simply run this command:
+
+```sh
+composer require spiritix/php-chrome-html2pdf
+```
+
+NPM packages are installed automatically in the background.
 
 ## Contributing
 
