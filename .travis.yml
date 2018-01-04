@@ -15,7 +15,7 @@ matrix:
 before_install:
   - nvm install 7.6
 
-install
+install:
   - npm install
 
 before_script:
