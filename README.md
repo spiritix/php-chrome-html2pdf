@@ -25,7 +25,7 @@ Or simply run this command:
 composer require spiritix/php-chrome-html2pdf
 ```
 
-NPM packages are installed automatically in the background.
+The required JS packages are installed automatically in the background.
 
 ## Contributing
 
