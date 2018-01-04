@@ -1,0 +1,32 @@
+{
+    "name": "php-chrome-html2pdf",
+    "version": "0.0.1",
+    "description": "A PHP library for converting HTML to PDF using Google Chrome.",
+    "main": "index.js",
+    "directories": {
+        "test": "tests/js"
+    },
+    "engines": {
+        "node": ">=7.6.0"
+    },
+    "dependencies": {
+        "puppeteer": "^0.13.0"
+    },
+    "devDependencies": {
+        "codeclimate-test-reporter": "^0.5.0",
+        "mocha": "^4.1.0"
+    },
+    "scripts": {
+        "test": "./node_modules/mocha/bin/mocha tests/js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/spiritix/php-chrome-html2pdf.git"
+    },
+    "author": "Matthias Isler <mi@matthias-isler.ch>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/spiritix/php-chrome-html2pdf/issues"
+    },
+    "homepage": "https://github.com/spiritix/php-chrome-html2pdf#readme"
+}

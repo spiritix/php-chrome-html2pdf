@@ -1,7 +1,6 @@
-.DS_Store
-.idea/
-/vendor
-/node_modules
-/build
-composer.phar
-composer.lock
+.idea
+vendor/
+node_modules/
+build/
+coverage/
+npm-debug.log
