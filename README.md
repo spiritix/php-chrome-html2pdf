@@ -1,2 +1,22 @@
-# php-chrome-html2pdf
-A PHP library for converting HTML to PDF using Google Chrome
+# PHP Chrome HTML2PDF
+
+A PHP library for converting HTML to PDF using Google Chrome.
+
+[![Build Status](https://travis-ci.org/spiritix/php-chrome-html2pdf.svg?branch=master)](https://travis-ci.org/spiritix/php-chrome-html2pdf)
+[![Code Climate](https://codeclimate.com/github/spiritix/php-chrome-html2pdf/badges/gpa.svg)](https://codeclimate.com/github/spiritix/php-chrome-html2pdf)
+[![Total Downloads](https://poser.pugx.org/spiritix/php-chrome-html2pdf/d/total.svg)](https://packagist.org/packages/spiritix/php-chrome-html2pdf)
+[![Latest Stable Version](https://poser.pugx.org/spiritix/php-chrome-html2pdf/v/stable.svg)](https://packagist.org/packages/spiritix/php-chrome-html2pdf)
+[![Latest Unstable Version](https://poser.pugx.org/spiritix/php-chrome-html2pdf/v/unstable.svg)](https://packagist.org/packages/spiritix/php-chrome-html2pdf)
+[![License](https://poser.pugx.org/spiritix/php-chrome-html2pdf/license.svg)](https://packagist.org/packages/spiritix/php-chrome-html2pdf)
+
+## Contributing
+
+Contributions in any form are welcome.
+Please consider the following guidelines before submitting pull requests:
+
+- **Coding standard** - It's mostly PSR. 
+- **Add tests!** - Your PR won't be accepted if it doesn't have tests.
+
+## License
+
+PHP Chrome HTML2PDF is free software distributed under the terms of the MIT license.
