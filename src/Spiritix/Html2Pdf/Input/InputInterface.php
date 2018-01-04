@@ -9,15 +9,22 @@
  * file that was distributed with this source code.
  */
 
-namespace Spiritix\Html2Pdf;
+declare(strict_types = 1);
+
+namespace Spiritix\Html2Pdf\Input;
 
 /**
- * Hi
+ * Input handler interface.
  *
- * @package Spiritix\Html2Pdf
+ * @package Spiritix\Html2Pdf\Input
  * @author  Matthias Isler <mi@matthias-isler.ch>
  */
-class Html2Pdf
+interface InputInterface
 {
-    // Hello world
+    /**
+     * Must return the input HTML markup.
+     *
+     * @return string
+     */
+    public function getHtml(): string;
 }

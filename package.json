@@ -10,6 +10,8 @@
         "node": ">=7.6.0"
     },
     "dependencies": {
+        "async-concat-stream": "^1.0.0",
+        "commander": "^2.12.2",
         "puppeteer": "^0.13.0"
     },
     "devDependencies": {

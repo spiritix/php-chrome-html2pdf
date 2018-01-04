@@ -4,3 +4,6 @@ node_modules/
 build/
 coverage/
 npm-debug.log
+test.php
+node-output.pdf
+php-output.pdf
