@@ -17,7 +17,7 @@ A PHP library for converting HTML to PDF using Google Chrome.
 
 ## Installation
 
-HtmlToPdf can be installed via [Composer](http://getcomposer.org) by requiring the
+PHP Chrome HTML to PDF can be installed via [Composer](http://getcomposer.org) by requiring the
 `spiritix/php-chrome-html2pdf` package in your project's `composer.json`.
 Or simply run this command:
 
@@ -37,4 +37,4 @@ Please consider the following guidelines before submitting pull requests:
 
 ## License
 
-PHP Chrome HTML2PDF is free software distributed under the terms of the MIT license.
+PHP Chrome HTML to PDF is free software distributed under the terms of the MIT license.
