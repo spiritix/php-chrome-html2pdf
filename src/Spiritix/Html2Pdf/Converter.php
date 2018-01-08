@@ -84,9 +84,9 @@ class Converter
      *
      * @throws ConverterException If option has not yet been set
      *
-     * @return string Option value
+     * @return mixed Option value
      */
-    public function getOption(string $key): string
+    public function getOption(string $key)
     {
         if (isset($this->options[$key])) {
             return $this->options[$key];
@@ -99,13 +99,13 @@ class Converter
      * Sets a single option.
      *
      * @param string $key   Option key
-     * @param string $value Option value
+     * @param mixed  $value Option value
      *
      * @throws ConverterException If option key is empty
      *
      * @return Converter
      */
-    public function setOption(string $key, string $value = ''): Converter
+    public function setOption(string $key, $value): Converter
     {
         if (empty($key)) {
             throw new ConverterException('Option key must not be empty');

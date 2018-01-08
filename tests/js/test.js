@@ -1,9 +1,33 @@
-const assert = require('assert');
+const expect = require('chai').expect;
+const assert = require('chai').assert;
+const Converter = require('../../lib/Converter');
 
-describe('Array', function() {
-    describe('#indexOf()', function() {
-        it('should return -1 when the value is not present', function() {
-            assert.equal([1,2,3].indexOf(4), -1);
+describe('Converter', () => {
+
+    describe('getDefaultOptions', () => {
+        it('returns an object', () => {
+            const converter = new Converter('', {});
+            assert.isObject(converter.getDefaultOptions());
         });
     });
+
+    describe('getOptions', () => {
+        it('returns the merged options object', () => {
+            const options = {printBackground: false, landscape: true};
+            const converter = new Converter('', options);
+
+            expect(converter.getOptions()).to.deep.equal({
+                ...converter.getDefaultOptions(),
+                ...options
+            });
+        });
+    });
+
+    describe('run', () => {
+        it('returns a buffer', async () => {
+            const converter = new Converter('<p>Hello</p>', {});
+            expect(await converter.run()).to.be.instanceof(Buffer);
+        });
+    });
+
 });
