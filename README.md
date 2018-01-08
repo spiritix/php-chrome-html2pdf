@@ -41,10 +41,8 @@ The required JS packages are installed automatically in the background.
 
 ## Usage
 
-The usage of this library is pretty simple. 
-You just need a converter instance, pass an input and an output handler to it and set some options if you like.
-After running the conversion, the converter will provide you with the output handler instance.
-Now you may use it's specific functionality to get your PDF file.
+Using this library is pretty straight forward. Decide for an input and an output handler, pass them to the converter, 
+set some options if you like and depending on the output handler, proceed with the generated PDF file.
 
 ```php
 use Spiritix\Html2Pdf\Converter;
