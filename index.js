@@ -8,22 +8,22 @@
  * file that was distributed with this source code.
  */
 
-const concat = require('async-concat-stream');
+const getStdin = require('get-stdin');
 const program = require('commander');
 const Converter = require('./lib/Converter');
 
-(async () => {
+(() => {
     program
         .option('-o, --options [options]', 'PDF options for puppeteer')
         .parse(process.argv);
 
     const options = JSON.parse(program.options);
 
-    const data = await concat.from(process.stdin);
-    const html = data.toString();
+    getStdin().then(html => {
+        const converter = new Converter(html, options);
 
-    const converter = new Converter(html, options);
-    const buffer = await converter.run();
-
-    process.stdout.write(buffer.toString('binary'), 'binary');
+        converter.run().then((buffer) => {
+            process.stdout.write(buffer.toString('binary'), 'binary');
+        });
+    });
 })();
