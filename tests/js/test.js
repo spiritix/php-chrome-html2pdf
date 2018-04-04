@@ -16,10 +16,9 @@ describe('Converter', () => {
             const options = {printBackground: false, landscape: true};
             const converter = new Converter('', options);
 
-            expect(converter.getOptions()).to.deep.equal({
-                ...converter.getDefaultOptions(),
-                ...options
-            });
+            expect(converter.getOptions()).to.deep.equal(
+                Object.assign({}, converter.getDefaultOptions(), options)
+            );
         });
     });
 

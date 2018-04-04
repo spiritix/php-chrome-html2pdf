@@ -9,7 +9,8 @@ A PHP library for converting HTML to PDF using Google Chrome.
 [![Latest Unstable Version](https://poser.pugx.org/spiritix/php-chrome-html2pdf/v/unstable.svg)](https://packagist.org/packages/spiritix/php-chrome-html2pdf)
 [![License](https://poser.pugx.org/spiritix/php-chrome-html2pdf/license.svg)](https://packagist.org/packages/spiritix/php-chrome-html2pdf)
 
-**This library is currently in alpha phase. For production use please refer to it's [precursor](https://github.com/spiritix/html-to-pdf) which is considered stable.**
+**If you are experiencing issues with this library, you might give its [precursor](https://github.com/spiritix/html-to-pdf) a try.**
+**It is based on an outdated version of [wkhtmltopdf](https://wkhtmltopdf.org/) but has been around for a few years.**
 
 ## How it works
 
@@ -26,7 +27,7 @@ and all the other fancy stuff people use these days.
 ## Requirements
 
 - PHP 7.0+ with enabled program execution functions (proc_open) and 'fopen wrappers'
-- Node.js 7.6+
+- Node.js 6.4+
 - A few [OS specific dependencies](https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md)
 
 ## Installation
