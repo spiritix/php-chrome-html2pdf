@@ -65,7 +65,7 @@ $converter->setOptions([
 ]);
 
 $output = $converter->convert();
-$output->download();
+$output->download('google.pdf');
 ```
 
 ### Input handlers
