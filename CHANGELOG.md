@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+## [1.0.1] - 2018-04-09
+### Fixed
+- Fixed broken install hook of NPM packages in Composer
+- Fixed bug in example script in README
+
 ## [1.0] - 2018-04-04
 ### Added
 - Initial stable release
