@@ -149,7 +149,7 @@ class Converter
      */
     public function convert(): OutputInterface
     {
-        $result = $this->executeShellCommand($this->buildCommand(), $this->input->getHtml());
+        $result = ProcessUtil::executeShellCommand($this->buildCommand(), $this->input->getHtml());
 
         if (strpos(mb_strtolower($result['error']), 'error') !== false) {
             throw new ConverterException('Binary error: ' . $result['error']);
@@ -175,46 +175,10 @@ class Converter
      */
     private function buildCommand(): string
     {
-        $options = escapeshellarg(json_encode($this->getOptions()));
+        $options = ProcessUtil::escapeShellArgument(json_encode($this->getOptions()));
         $command = $this->getBinaryPath() . ' -o ' . $options;
 
         return $command;
-    }
-
-    /**
-     * Executes a shell command.
-     *
-     * @param string $command The command to be executed
-     * @param string $input   The data to be provided through the input stream
-     *
-     * @return array
-     */
-    protected function executeShellCommand(string $command, string $input = ''): array
-    {
-        $result = [];
-
-        $proc = proc_open(
-            $command,
-            [
-                0 => ['pipe', 'r'],
-                1 => ['pipe', 'w'],
-                2 => ['pipe', 'w'],
-            ],
-            $pipes
-        );
-
-        fwrite($pipes[0], $input);
-        fclose($pipes[0]);
-
-        $result['output'] = stream_get_contents($pipes[1]);
-        fclose($pipes[1]);
-
-        $result['error'] = stream_get_contents($pipes[2]);
-        fclose($pipes[2]);
-
-        $result['result'] = (int) proc_close($proc);
-
-        return $result;
     }
 
     /**
@@ -224,6 +188,12 @@ class Converter
      */
     private function getBinaryPath(): string
     {
-        return 'node ' . dirname(__FILE__) . '/../../../' . self::JS_BINARY;
+        return 'node ' .
+            dirname(__FILE__) .
+            DIRECTORY_SEPARATOR . '..' .
+            DIRECTORY_SEPARATOR . '..' .
+            DIRECTORY_SEPARATOR . '..' .
+            DIRECTORY_SEPARATOR .
+            self::JS_BINARY;
     }
 }
