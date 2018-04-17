@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+## [1.1.0] - 2018-04-17
+### Added
+- Added Windows support
+
 ## [1.0.1] - 2018-04-09
 ### Fixed
 - Fixed broken install hook of NPM packages in Composer
