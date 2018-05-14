@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+## [1.1.1] - 2018-05-14
+### Fixed
+- Fixed bug in Converter when using root 
+
 ## [1.1] - 2018-04-17
 ### Added
 - Added Windows support
