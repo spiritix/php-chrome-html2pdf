@@ -101,13 +101,13 @@ The following output handlers are available:
 - `format` <[string]> Paper format. If set, takes priority over `width` or `height` options. Defaults to 'Letter'.
 - `width` <[string]> Paper width, accepts values labeled with units.
 - `height` <[string]> Paper height, accepts values labeled with units.
-- `margin` <[Object]> Paper margins, defaults to none.
+- `margin` <[array]> Paper margins, defaults to none.
     - `top` <[string]> Top margin, accepts values labeled with units.
     - `right` <[string]> Right margin, accepts values labeled with units.
     - `bottom` <[string]> Bottom margin, accepts values labeled with units.
     - `left` <[string]> Left margin, accepts values labeled with units.
 - `mediaType` <?[string]> Changes the CSS media type of the page. The only allowed values are `'screen'`, `'print'` and `null`. Passing `null` disables media emulation.
-- `viewport` <[Object]>
+- `viewport` <[array]>
     - `width` <[number]> page width in pixels.
     - `height` <[number]> page height in pixels.
     - `deviceScaleFactor` <[number]> Specify device scale factor (can be thought of as dpr). Defaults to `1`.
