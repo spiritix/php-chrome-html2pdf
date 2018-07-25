@@ -72,8 +72,8 @@ $output->download('google.pdf');
 
 The following input handlers are available:
 
-- StringInput - Accepts the PDF content as a string
-- UrlInput - Fetches the PDF content from an URL
+- StringInput - Accepts the HTML content as a string
+- UrlInput - Fetches the HTML content from an URL
 
 ### Output handlers
 
