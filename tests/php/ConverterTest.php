@@ -48,6 +48,14 @@ class ConverterTest extends TestCase
         ], $options);
     }
 
+    public function testNodePath()
+    {
+        $path = '/path/to/node';
+        $this->converter->setNodePath($path);
+
+        $this->assertEquals($path, $this->converter->getNodePath());
+    }
+
     public function testConvert()
     {
         $output = $this->converter->convert();

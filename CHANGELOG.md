@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+## [1.2] - 2018-07-30
+### Added
+- Added method to manually set the path to the Node.js executable
+
 ## [1.1.1] - 2018-05-14
 ### Fixed
 - Fixed bug in Converter when using root 

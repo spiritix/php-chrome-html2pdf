@@ -51,6 +51,13 @@ class Converter
     private $options = [];
 
     /**
+     * The path to the Node.js executable
+     *
+     * @var string
+     */
+    private $nodePath = 'node';
+
+    /**
      * Initialize converter.
      *
      * @param InputInterface  $input
@@ -139,6 +146,30 @@ class Converter
     }
 
     /**
+     * Returns the path to the Node.js executable.
+     *
+     * @return string
+     */
+    public function getNodePath(): string
+    {
+        return $this->nodePath;
+    }
+
+    /**
+     * Set the path to the Node.js executable.
+     *
+     * @param string $path
+     *
+     * @return Converter
+     */
+    public function setNodePath(string $path): Converter
+    {
+        $this->nodePath = $path;
+
+        return $this;
+    }
+
+    /**
      * Runs the conversion.
      *
      * @throws ConverterException If a binary error occurred
@@ -188,7 +219,8 @@ class Converter
      */
     private function getBinaryPath(): string
     {
-        return 'node ' .
+        return $this->getNodePath() .
+            ' ' .
             dirname(__FILE__) .
             DIRECTORY_SEPARATOR . '..' .
             DIRECTORY_SEPARATOR . '..' .

@@ -115,6 +115,11 @@ The following output handlers are available:
     - `hasTouch`<[boolean]> Specifies if viewport supports touch events. Defaults to `false`
     - `isLandscape` <[boolean]> Specifies if viewport is in landscape mode. Defaults to `false`.
 
+## Troubleshooting
+
+- Make sure you've installed all [OS specific dependencies](https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md).
+- Manually set the path to your Node.js executable using the `$converter->setNodePath()` method.
+
 ## Contributing
 
 Contributions in any form are welcome.
