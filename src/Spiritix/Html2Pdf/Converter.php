@@ -164,7 +164,9 @@ class Converter
      */
     public function setNodePath(string $path): Converter
     {
-        $this->nodePath = $path;
+        if (!empty($path)) {
+            $this->nodePath = $path;
+        }
 
         return $this;
     }
