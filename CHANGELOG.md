@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+## [1.3] - 2019-02-26
+### Changed
+- Added support for Puppeteer 1.x
+
 ## [1.2.1] - 2018-07-31
 ### Changed
 - The setNodePath method doesn't accept empty parameter anymore
