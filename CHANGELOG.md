@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+## [1.3.1] - 2019-03-07
+### Fixed
+- Fixed empty PDF bug
+
 ## [1.3] - 2019-02-26
 ### Changed
 - Added support for Puppeteer 1.x
