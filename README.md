@@ -114,6 +114,10 @@ The following output handlers are available:
     - `isMobile` <[boolean]> Whether the `meta viewport` tag is taken into account. Defaults to `false`.
     - `hasTouch`<[boolean]> Specifies if viewport supports touch events. Defaults to `false`
     - `isLandscape` <[boolean]> Specifies if viewport is in landscape mode. Defaults to `false`.
+    
+> **NOTE** `headerTemplate` and `footerTemplate` markup have the following limitations:
+> 1. Script tags inside templates are not evaluated.
+> 2. Page styles are not visible inside templates.
 
 ## Troubleshooting
 
