@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## [1.4] - 2019-09-24
+### Added
+- Added pageWaitFor option
+- Added cookies option
+
+### Changed
+- Added --disable-web-security to get webfonts working
+
 ## [1.3.1] - 2019-03-07
 ### Fixed
 - Fixed empty PDF bug
