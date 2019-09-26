@@ -6,13 +6,19 @@
   "directories": {
     "test": "tests/js"
   },
+  "babel": {
+    "presets": [
+      "node6"
+    ]
+  },
   "engines": {
     "node": ">=6.4.0"
   },
   "dependencies": {
     "commander": "^2.12.2",
     "get-stdin": "^6.0.0",
-    "puppeteer": "^1.12.2"
+    "puppeteer": "^1.12.2",
+    "puppeteer-core": "^1.12.2"
   },
   "devDependencies": {
     "chai": "^4.1.2",

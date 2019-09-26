@@ -19,9 +19,9 @@ const Converter = require('./lib/Converter');
 
     const options = JSON.parse(program.options);
 
-    await html = await getStdin();
+    let html = await getStdin();
     const converter = new Converter(html, options);
 
-    await buffer = await converter.run();
+    let buffer = await converter.run();
     process.stdout.write(buffer.toString('binary'), 'binary');
 })();
