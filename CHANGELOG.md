@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+## [1.4.1] - 2019-11-11
+### Fixed
+- NPM warning for invalid version
+
 ## [1.4] - 2019-09-24
 ### Added
 - Added pageWaitFor option
