@@ -8,24 +8,27 @@
   },
   "babel": {
     "presets": [
-      "node6"
+      "node6-es6"
     ]
   },
   "engines": {
     "node": ">=6.4.0"
   },
   "dependencies": {
+    "babel-preset-node6-es6": "^11.2.5",
     "commander": "^2.12.2",
     "get-stdin": "^6.0.0",
     "puppeteer": "^1.12.2",
     "puppeteer-core": "^1.12.2"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
     "chai": "^4.1.2",
     "codeclimate-test-reporter": "^0.5.0",
     "mocha": "^4.1.0"
   },
   "scripts": {
+    "build": "npx babel lib-src -d lib",
     "test": "./node_modules/mocha/bin/mocha --timeout=10000 tests/js"
   },
   "repository": {
