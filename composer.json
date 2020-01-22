@@ -28,5 +28,10 @@
             "Spiritix\\Html2Pdf\\Tests\\": "tests/php/"
         }
     },
-    "minimum-stability": "stable"
+    "minimum-stability": "stable",
+    "extra": {
+        "npm-bridge": {
+            "timeout": 3600
+        }
+    }
 }
