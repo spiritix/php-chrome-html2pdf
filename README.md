@@ -118,6 +118,8 @@ The following output handlers are available:
 > 1. Script tags inside templates are not evaluated.
 > 2. Page styles are not visible inside templates.
 
+> **NOTE** By default, this library generates a pdf with modified colors for printing. Use the `-webkit-print-color-adjust`  property to force rendering of exact colors.
+
 ## Troubleshooting
 
 - Make sure you've installed all [OS specific dependencies](https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md).
