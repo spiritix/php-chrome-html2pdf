@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+## [1.5.0] - 2020-06-05
+### Changed
+- Updated all dependencies to the latest versions
+- Refactored JS code to ES6
+
 ## [1.4.1] - 2019-11-11
 ### Fixed
 - NPM warning for invalid version

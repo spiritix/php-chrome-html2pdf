@@ -23,7 +23,7 @@ describe('Converter', () => {
     });
 
     describe('run', () => {
-        it('returns a buffer', async () => {
+        it('returns a buffer', async (done) => {
             const converter = new Converter('<p>Hello</p>', {});
             expect(await converter.run()).to.be.instanceof(Buffer);
         });

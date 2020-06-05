@@ -1,23 +1,23 @@
 {
   "name": "php-chrome-html2pdf",
-  "version": "1.4.1",
+  "version": "1.5.0",
   "description": "A PHP library for converting HTML to PDF using Google Chrome.",
   "main": "index.js",
   "directories": {
     "test": "tests/js"
   },
   "engines": {
-    "node": ">=6.4.0"
+    "node": ">=10.18.1"
   },
   "dependencies": {
     "commander": "^2.12.2",
     "get-stdin": "^6.0.0",
-    "puppeteer": "^1.12.2"
+    "puppeteer": "^3.3.0"
   },
   "devDependencies": {
-    "chai": "^4.1.2",
-    "codeclimate-test-reporter": "^0.5.0",
-    "mocha": "^4.1.0"
+    "chai": "^4.2.0",
+    "codeclimate-test-reporter": "^0.5.1",
+    "mocha": "^7.2.0"
   },
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha --timeout=10000 tests/js"

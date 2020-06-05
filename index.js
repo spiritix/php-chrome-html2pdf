@@ -12,18 +12,15 @@ const getStdin = require('get-stdin');
 const program = require('commander');
 const Converter = require('./lib/Converter');
 
-(() => {
+(async () => {
     program
         .option('-o, --options [options]', 'PDF options for puppeteer')
         .parse(process.argv);
 
     const options = JSON.parse(program.options);
 
-    getStdin().then(html => {
-        const converter = new Converter(html, options);
+    const converter = new Converter(await getStdin(), options);
+    const buffer = await converter.run();
 
-        converter.run().then((buffer) => {
-            process.stdout.write(buffer.toString('binary'), 'binary');
-        });
-    });
+    process.stdout.write(buffer.toString('binary'), 'binary');
 })();
