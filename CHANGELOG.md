@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+## [1.5.1] - 2020-09-01
+### Fixed
+- Fixed bug in download output handler
+
 ## [1.5.0] - 2020-06-05
 ### Changed
 - Updated all dependencies to the latest versions
