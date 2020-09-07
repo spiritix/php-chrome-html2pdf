@@ -222,12 +222,12 @@ class Converter
     private function getBinaryPath(): string
     {
         return $this->getNodePath() .
-            ' ' .
+            ' "' .
             dirname(__FILE__) .
             DIRECTORY_SEPARATOR . '..' .
             DIRECTORY_SEPARATOR . '..' .
             DIRECTORY_SEPARATOR . '..' .
             DIRECTORY_SEPARATOR .
-            self::JS_BINARY;
+            self::JS_BINARY . '"';
     }
 }
