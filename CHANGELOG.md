@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+## [1.5.2] - 2020-09-07
+### Fixed
+- Fixed bug with whitespaces in directory names
+
 ## [1.5.1] - 2020-09-01
 ### Fixed
 - Fixed bug in download output handler
