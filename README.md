@@ -58,6 +58,7 @@ $converter->setOption('landscape', true);
 
 $converter->setOptions([
     'printBackground' => true,
+    'displayHeaderFooter' => true,
     'headerTemplate' => '<p>I am a header</p>',
 ]);
 
