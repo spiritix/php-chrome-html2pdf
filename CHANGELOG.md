@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+## [1.6.0] - 2020-12-10
+### Added
+- Adds support for Composer 2
+
 ## [1.5.2] - 2020-09-07
 ### Fixed
 - Fixed bug with whitespaces in directory names
