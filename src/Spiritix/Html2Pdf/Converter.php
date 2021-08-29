@@ -208,7 +208,7 @@ class Converter
      */
     private function buildCommand(): string
     {
-        $options = ProcessUtil::escapeShellArgument(json_encode($this->getOptions()));
+        $options = ProcessUtil::escapeShellArgument(json_encode($this->getOptions(), JSON_UNESCAPED_SLASHES));
         $command = $this->getBinaryPath() . ' -o ' . $options;
 
         return $command;
