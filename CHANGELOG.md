@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+## [1.6.1] - 2021-08-31
+### Fixed
+- Fixed bug related to escaping slashes in URLs
+
 ## [1.6.0] - 2020-12-10
 ### Added
 - Adds support for Composer 2
