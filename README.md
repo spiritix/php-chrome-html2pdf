@@ -25,7 +25,7 @@ and all the other fancy stuff people use these days.
 
 - PHP 7.0+ with enabled program execution functions (proc_open) and 'fopen wrappers'
 - Node.js 10.18.1+ (for older Node.js versions use [v.1.4.1](https://github.com/spiritix/php-chrome-html2pdf/releases/tag/v1.4.1))
-- A few [OS specific dependencies](https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md)
+- A few [OS specific dependencies](https://github.com/puppeteer/puppeteer/blob/main/docs/troubleshooting.md#chrome-headless-doesnt-launch-on-unix)
 
 ## Installation
 
@@ -123,7 +123,7 @@ The following output handlers are available:
 
 ## Troubleshooting
 
-- Make sure you've installed all [OS specific dependencies](https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md).
+- Make sure you've installed all [OS specific dependencies](https://github.com/puppeteer/puppeteer/blob/main/docs/troubleshooting.md#chrome-headless-doesnt-launch-on-unix).
 - Manually set the path to your Node.js executable using the `$converter->setNodePath()` method.
 
 ## Contributing
