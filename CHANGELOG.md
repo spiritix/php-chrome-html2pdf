@@ -2,6 +2,17 @@
 
 ## [Unreleased]
 
+## [1.7] - 2022-04-29
+### Added
+- Updated to PHP 8.1
+- Updated to Node.js 18.0
+- Updated to Puppeteer 13.7
+- Updated all other dependencies to the latest versions
+- Added a Dockerfile for development and testing
+
+### Changed
+- Dropped support for PHP < 8.0
+
 ## [1.6.1] - 2021-08-31
 ### Fixed
 - Fixed bug related to escaping slashes in URLs

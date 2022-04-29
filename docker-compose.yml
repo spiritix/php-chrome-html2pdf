@@ -1,0 +1,14 @@
+version: '3.7'
+
+services:
+  app:
+    build:
+      context: .
+    volumes:
+      - .:/usr/src/app
+    restart: unless-stopped
+    environment:
+      UID: ${UID}
+      GID: ${GID}
+    tty: true
+    stdin_open: true
