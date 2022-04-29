@@ -13,7 +13,7 @@ class ConverterTest extends TestCase
      */
     private $converter;
 
-    public function setUp()
+    public function setUp(): void
     {
         parent::setUp();
 

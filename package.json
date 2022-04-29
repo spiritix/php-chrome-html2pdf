@@ -3,6 +3,7 @@
   "version": "1.7",
   "description": "A PHP library for converting HTML to PDF using Google Chrome.",
   "main": "index.js",
+  "type": "module",
   "directories": {
     "test": "tests/js"
   },

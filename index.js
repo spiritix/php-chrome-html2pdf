@@ -8,9 +8,9 @@
  * file that was distributed with this source code.
  */
 
-const getStdin = require('get-stdin');
-const program = require('commander');
-const Converter = require('./lib/Converter');
+import getStdin from 'get-stdin';
+import { program } from 'commander';
+import Converter from './lib/Converter.js';
 
 (async () => {
     program

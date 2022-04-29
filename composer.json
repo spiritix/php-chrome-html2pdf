@@ -32,5 +32,10 @@
         "npm-bridge": {
             "timeout": 3600
         }
+    },
+    "config": {
+        "allow-plugins": {
+            "eloquent/composer-npm-bridge": true
+        }
     }
 }
