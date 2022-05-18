@@ -104,6 +104,9 @@ The following output handlers are available:
     - `right` <[string]> Right margin, accepts values labeled with units.
     - `bottom` <[string]> Bottom margin, accepts values labeled with units.
     - `left` <[string]> Left margin, accepts values labeled with units.
+- `preferCSSPageSize` <[boolean]> Give any CSS @page size declared in the page priority over what is declared in width and height or format options. Defaults to `false`, which will scale the content to fit the paper size.
+- `omitBackground` <[boolean]> Hides default white background and allows capturing screenshots with transparency. Defaults to `false`.
+- `timeout` <[number]> Maximum time in milliseconds, defaults to 30 seconds, pass 0 to disable timeout.
 - `mediaType` <?[string]> Changes the CSS media type of the page. The only allowed values are `'screen'`, `'print'` and `null`. Passing `null` disables media emulation.
 - `viewport` <[array]>
     - `width` <[number]> page width in pixels.

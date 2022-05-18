@@ -1,13 +1,12 @@
-const expect = require('chai').expect;
-const assert = require('chai').assert;
-const Converter = require('../../lib/Converter');
+import chai from 'chai'
+import Converter from '../../lib/Converter.js';
 
 describe('Converter', () => {
 
     describe('getDefaultOptions', () => {
         it('returns an object', () => {
             const converter = new Converter('', {});
-            assert.isObject(converter.getDefaultOptions());
+            chai.assert.isObject(converter.getDefaultOptions());
         });
     });
 
@@ -16,16 +15,16 @@ describe('Converter', () => {
             const options = {printBackground: false, landscape: true};
             const converter = new Converter('', options);
 
-            expect(converter.getOptions()).to.deep.equal(
+            chai.expect(converter.getOptions()).to.deep.equal(
                 Object.assign({}, converter.getDefaultOptions(), options)
             );
         });
     });
 
     describe('run', () => {
-        it('returns a buffer', async (done) => {
+        it('returns a buffer', async () => {
             const converter = new Converter('<p>Hello</p>', {});
-            expect(await converter.run()).to.be.instanceof(Buffer);
+            chai.expect(await converter.run()).to.be.instanceof(Buffer);
         });
     });
 

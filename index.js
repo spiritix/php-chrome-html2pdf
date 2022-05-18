@@ -15,9 +15,9 @@ import Converter from './lib/Converter.js';
 (async () => {
     program
         .option('-o, --options [options]', 'PDF options for puppeteer')
-        .parse(process.argv);
+        .parse()
 
-    const options = JSON.parse(program.options);
+    const options = JSON.parse(program.opts().options);
 
     const converter = new Converter(await getStdin(), options);
     const buffer = await converter.run();

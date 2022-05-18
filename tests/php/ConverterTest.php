@@ -59,6 +59,7 @@ class ConverterTest extends TestCase
     public function testConvert()
     {
         $output = $this->converter->convert();
+
         $this->assertInstanceOf(StringOutput::class, $output);
     }
 }

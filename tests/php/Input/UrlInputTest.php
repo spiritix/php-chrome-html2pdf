@@ -12,6 +12,6 @@ class UrlInputTest extends TestCase
         $input = new UrlInput();
         $input->setUrl('https://www.google.com');
 
-        $this->assertContains('Google', $input->getHtml());
+        $this->assertStringContainsString('Google', $input->getHtml());
     }
 }
