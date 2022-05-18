@@ -2,7 +2,7 @@
 
 ## [Unreleased]
 
-## [1.7] - 2022-04-29
+## [1.7] - 2022-05-18
 ### Added
 - Updated to PHP 8.1
 - Updated to Node.js 18.0
