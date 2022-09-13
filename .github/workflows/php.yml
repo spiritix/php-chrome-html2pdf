@@ -37,5 +37,5 @@ jobs:
       - name: Install dependencies
         run: composer install --prefer-dist --no-progress
 
-      - name: Static analysis using phpstan
+      - name: PHPUnit
         run: php vendor/bin/phpunit --coverage-clover clover.xml
