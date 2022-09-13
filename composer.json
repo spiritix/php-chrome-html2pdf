@@ -3,7 +3,16 @@
     "type": "library",
     "description": "A PHP library for converting HTML to PDF using Google Chrome",
     "license": "MIT",
-    "keywords": ["php","html","pdf","Html2Pdf","html2pdf","chrome","headless","puppeteer"],
+    "keywords": [
+        "php",
+        "html",
+        "pdf",
+        "Html2Pdf",
+        "html2pdf",
+        "chrome",
+        "headless",
+        "puppeteer"
+    ],
     "authors": [
         {
             "name": "Matthias Isler",
@@ -11,7 +20,7 @@
         }
     ],
     "require": {
-        "php": ">=8.0",
+        "php": "^8.0",
         "eloquent/composer-npm-bridge": "^5"
     },
     "require-dev": {
@@ -37,5 +46,8 @@
         "allow-plugins": {
             "eloquent/composer-npm-bridge": true
         }
+    },
+    "scripts": {
+        "test": "./vendor/bin/phpunit"
     }
 }
