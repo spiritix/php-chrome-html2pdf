@@ -7,19 +7,18 @@
          convertNoticesToExceptions="true"
          convertWarningsToExceptions="true"
          processIsolation="false"
-         stopOnFailure="false"
-         syntaxCheck="false">
-    <logging>
-        <log type="coverage-clover" target="build/logs/clover.xml"/>
-    </logging>
-    <testsuites>
-        <testsuite name="Test suite">
-            <directory suffix="Test.php">./tests/php/</directory>
-        </testsuite>
-    </testsuites>
-    <filter>
-        <whitelist>
-            <directory>./src</directory>
-        </whitelist>
-    </filter>
+         stopOnFailure="false">
+	<coverage>
+		<include>
+			<directory>./src</directory>
+		</include>
+		<report>
+			<clover outputFile="build/logs/clover.xml"/>
+		</report>
+	</coverage>
+	<testsuites>
+		<testsuite name="Test suite">
+			<directory suffix="Test.php">./tests/php/</directory>
+		</testsuite>
+	</testsuites>
 </phpunit>
