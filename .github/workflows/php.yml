@@ -39,3 +39,9 @@ jobs:
 
       - name: PHPUnit
         run: php vendor/bin/phpunit --coverage-clover clover.xml
+
+
+      - name: Publish code coverage
+        uses: paambaati/codeclimate-action@v3.0.0
+        env:
+          CC_TEST_REPORTER_ID: 9f50abd103970276888567b08e665c8cedb039ee0a529ef768df269028f9d879
