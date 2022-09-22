@@ -21,10 +21,10 @@
     ],
     "require": {
         "php": "^8.0",
-        "eloquent/composer-npm-bridge": "^5"
+        "eloquent/composer-npm-bridge": "^5.0"
     },
     "require-dev": {
-        "phpunit/phpunit": "~9.0"
+        "phpunit/phpunit": "^9.0"
     },
     "autoload": {
         "psr-4": {
