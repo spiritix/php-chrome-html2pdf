@@ -8,7 +8,7 @@ RUN apt-get update && apt-get install -y \
   libxcursor1 libxdamage1 libxext6 libxfixes3 libxi6 libxrandr2 libxrender1 libxss1 libxtst6 lsb-release \
   wget xdg-utils
 
-RUN curl -fsSL https://deb.nodesource.com/setup_current.x | bash - && \
+RUN curl -fsSL https://deb.nodesource.com/setup_lts.x | bash - && \
  apt-get install -y nodejs
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
