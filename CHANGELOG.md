@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+## [1.7.1] - 2022-09-27
+### Fixed
+- Fixed bug related to media types
+
 ## [1.7] - 2022-05-18
 ### Added
 - Updated to PHP 8.1
