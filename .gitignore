@@ -8,5 +8,4 @@ test.php
 node-output.pdf
 php-output.pdf
 composer.lock
-package-lock.json
 .phpunit.result.cache
