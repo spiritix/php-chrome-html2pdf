@@ -20,7 +20,7 @@
     "mocha": "^10.0.0"
   },
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha --timeout=10000 tests/js"
+    "test": "mocha --timeout=10000 tests/js"
   },
   "repository": {
     "type": "git",
