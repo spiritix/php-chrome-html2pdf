@@ -24,7 +24,7 @@ and all the other fancy stuff people use these days.
 ## Requirements
 
 - PHP 8.0+ with enabled program execution functions (proc_open) and 'fopen wrappers'
-- Node.js 18.0.0+ (for older Node.js versions use see [changelog](https://github.com/spiritix/php-chrome-html2pdf/blob/master/CHANGELOG.md))
+- Node.js 14.1.0+ (for older Node.js versions use see [changelog](https://github.com/spiritix/php-chrome-html2pdf/blob/master/CHANGELOG.md))
 - A few [OS specific dependencies](https://github.com/puppeteer/puppeteer/blob/main/docs/troubleshooting.md#chrome-headless-doesnt-launch-on-unix)
 
 ## Installation
