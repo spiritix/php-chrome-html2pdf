@@ -7,7 +7,7 @@ permissions:
 
 jobs:
 
-  phpstan_pimcore10:
+  lint:
 
     name: PHP ${{ matrix.php-versions }} on ${{ matrix.operating-system }}
     runs-on: ${{ matrix.operating-system }}
