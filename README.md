@@ -1,6 +1,6 @@
 # PHP Chrome HTML to PDF
 
-A PHP library for converting HTML to PDF using Google Chrome.
+A PHP library for converting HTML to PDF using Chrome/Chromium.
 
 [![PHP Checks](https://github.com/spiritix/php-chrome-html2pdf/actions/workflows/php.yml/badge.svg)](https://github.com/spiritix/php-chrome-html2pdf/actions/workflows/php.yml)
 [![Node.js Checks](https://github.com/spiritix/php-chrome-html2pdf/actions/workflows/js.yml/badge.svg)](https://github.com/spiritix/php-chrome-html2pdf/actions/workflows/js.yml)
