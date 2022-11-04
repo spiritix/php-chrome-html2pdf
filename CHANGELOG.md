@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## [1.7.2] - 2022-11-04
+### Fixed
+- Fixed bug in fonts rendering
+
+### Changed
+- Replaced Travis CI with Github Actions
+- Downgraded Node.js requirement
+
 ## [1.7.1] - 2022-09-27
 ### Fixed
 - Fixed bug related to media types
