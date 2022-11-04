@@ -2,7 +2,8 @@
 
 A PHP library for converting HTML to PDF using Google Chrome.
 
-[![Build Status](https://travis-ci.org/spiritix/php-chrome-html2pdf.svg?branch=master)](https://travis-ci.org/spiritix/php-chrome-html2pdf)
+[![PHP Checks](https://github.com/spiritix/php-chrome-html2pdf/actions/workflows/php.yml/badge.svg)](https://github.com/spiritix/php-chrome-html2pdf/actions/workflows/php.yml)
+[![Node.js Checks](https://github.com/spiritix/php-chrome-html2pdf/actions/workflows/js.yml/badge.svg)](https://github.com/spiritix/php-chrome-html2pdf/actions/workflows/js.yml)
 [![Code Climate](https://codeclimate.com/github/spiritix/php-chrome-html2pdf/badges/gpa.svg)](https://codeclimate.com/github/spiritix/php-chrome-html2pdf)
 [![Total Downloads](https://poser.pugx.org/spiritix/php-chrome-html2pdf/d/total.svg)](https://packagist.org/packages/spiritix/php-chrome-html2pdf)
 [![Latest Stable Version](https://poser.pugx.org/spiritix/php-chrome-html2pdf/v/stable.svg)](https://packagist.org/packages/spiritix/php-chrome-html2pdf)
@@ -24,7 +25,7 @@ and all the other fancy stuff people use these days.
 ## Requirements
 
 - PHP 8.0+ with enabled program execution functions (proc_open) and 'fopen wrappers'
-- Node.js 18.0.0+ (for older Node.js versions use see [changelog](https://github.com/spiritix/php-chrome-html2pdf/blob/master/CHANGELOG.md))
+- Node.js 14.1.0+ (for older Node.js versions use see [changelog](https://github.com/spiritix/php-chrome-html2pdf/blob/master/CHANGELOG.md))
 - A few [OS specific dependencies](https://github.com/puppeteer/puppeteer/blob/main/docs/troubleshooting.md#chrome-headless-doesnt-launch-on-unix)
 
 ## Installation
