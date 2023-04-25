@@ -1,6 +1,6 @@
 {
   "name": "php-chrome-html2pdf",
-  "version": "1.7.3",
+  "version": "1.7.4",
   "description": "A PHP library for converting HTML to PDF using Google Chrome.",
   "main": "index.js",
   "type": "module",
