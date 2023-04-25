@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+## [1.7.4] - 2023-04-25
+### Fixed
+- Improved loading times
+
 ## [1.7.3] - 2022-11-11
 ### Fixed
 - Fixed bug related to page timeouts
