@@ -21,7 +21,7 @@
     ],
     "require": {
         "php": "^8.0",
-        "php-forge/foxy": "^0.1"
+        "oat-sa/composer-npm-bridge": "^0.4"
     },
     "require-dev": {
         "phpunit/phpunit": "^9.0"
