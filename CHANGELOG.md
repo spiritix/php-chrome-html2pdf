@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+## [1.7.5] - 2024-02-12
+### Changed
+- Replaced NPM bridge with new library
+- Updated dependencies
+
 ## [1.7.4] - 2023-04-25
 ### Fixed
 - Improved loading times
