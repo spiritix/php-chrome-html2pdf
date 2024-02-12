@@ -44,7 +44,7 @@
     },
     "config": {
         "allow-plugins": {
-            "eloquent/composer-npm-bridge": true
+            "oat-sa/composer-npm-bridge": true
         }
     },
     "scripts": {
