@@ -2,6 +2,13 @@
 
 ## [Unreleased]
 
+## [1.7.6] - 2024-04-04
+### Fixed
+- Fixed bug related to puppeteer
+
+### Changed
+- Updated dependencies
+
 ## [1.7.5] - 2024-02-12
 ### Changed
 - Replaced NPM bridge with new library
