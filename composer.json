@@ -20,7 +20,7 @@
         }
     ],
     "require": {
-        "php": "^8.0",
+        "php": "^8.1",
         "oat-sa/composer-npm-bridge": "^0.4"
     },
     "require-dev": {
@@ -44,7 +44,8 @@
     },
     "config": {
         "allow-plugins": {
-            "oat-sa/composer-npm-bridge": true
+            "oat-sa/composer-npm-bridge": true,
+            "eloquent/composer-npm-bridge": true
         }
     },
     "scripts": {
