@@ -132,6 +132,7 @@ The following output handlers are available:
 
 - Make sure you've installed all [OS specific dependencies](https://github.com/puppeteer/puppeteer/blob/main/docs/troubleshooting.md#chrome-headless-doesnt-launch-on-unix).
 - Manually set the path to your Node.js executable using the `$converter->setNodePath()` method.
+- Footer or header are not visible? See [here](https://github.com/spiritix/php-chrome-html2pdf/issues/66).
 
 ## Contributing
 
