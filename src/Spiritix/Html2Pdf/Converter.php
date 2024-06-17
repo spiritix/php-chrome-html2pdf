@@ -50,6 +50,14 @@ class Converter
      */
     private $options = [];
 
+
+    /**
+     * The currently set launch arguments.
+     *
+     * @var array
+     */
+    private $launchOptions = [];
+
     /**
      * The path to the Node.js executable
      *
@@ -63,14 +71,18 @@ class Converter
      * @param InputInterface  $input
      * @param OutputInterface $output
      * @param array           $options Shortcut for setting multiple options
+     * @param array           $launch_args Shortcut for setting puppeeter launch arguments
      */
-    public function __construct(InputInterface $input, OutputInterface $output, array $options = [])
+    public function __construct(InputInterface $input, OutputInterface $output, array $options = [], array $launch_args = [])
     {
         $this->input = $input;
         $this->output = $output;
 
         if (!empty($options)) {
             $this->setOptions($options);
+        }
+        if (!empty($launch_args)) {
+            $this->setLaunchOptions($launch_args);
         }
     }
 
@@ -146,6 +158,77 @@ class Converter
     }
 
     /**
+     * Returns all launchOptions.
+     *
+     * @return array
+     */
+    public function getLaunchOptions(): array
+    {
+        return $this->launchOptions;
+    }
+
+    /**
+     * Returns a single launchOption.
+     *
+     * @param string $key LaunchOption key
+     *
+     * @throws ConverterException If launchOption has not yet been set
+     *
+     * @return mixed LaunchOption value
+     */
+    public function getLaunchOption(string $key)
+    {
+        if (isset($this->launchOptions[$key])) {
+            return $this->launchOptions[$key];
+        }
+
+        throw new ConverterException('LaunchOption "' . $key . '" has not been set');
+    }
+
+    /**
+     * Sets a single launchOption.
+     *
+     * @param string $key   LaunchOption key
+     * @param mixed  $value LaunchOption value
+     *
+     * @throws ConverterException If launchOption key is empty
+     *
+     * @return Converter
+     */
+    public function setLaunchOption(string $key, $value): Converter
+    {
+        if (empty($key)) {
+            throw new ConverterException('LaunchOption key must not be empty');
+        }
+
+        $this->launchOptions[$key] = $value;
+
+        return $this;
+    }
+
+    /**
+     * Set multiple launchOptions at once.
+     *
+     * @param object $launchOptions Multiple launchOptions
+     *
+     * @throws ConverterException If launchOptions are empty
+     *
+     * @return Converter
+     */
+    public function setLaunchOptions(object $launchOptions): Converter
+    {
+        if (empty($launchOptions)) {
+            throw new ConverterException('Provided launchOptions must not be empty');
+        }
+
+        foreach ($launchOptions as $key => $value) {
+            $this->setLaunchOption($key, $value);
+        }
+
+        return $this;
+    }
+
+    /**
      * Returns the path to the Node.js executable.
      *
      * @return string
@@ -209,7 +292,8 @@ class Converter
     private function buildCommand(): string
     {
         $options = ProcessUtil::escapeShellArgument(json_encode($this->getOptions(), JSON_UNESCAPED_SLASHES));
-        $command = $this->getBinaryPath() . ' -o ' . $options;
+        $launchOptions = ProcessUtil::escapeShellArgument(json_encode($this->getLaunchOptions(), JSON_UNESCAPED_SLASHES));
+        $command = $this->getBinaryPath() . ' -o ' . $options. ' -l ' . $launchOptions;
 
         return $command;
     }

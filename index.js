@@ -15,11 +15,13 @@ import Converter from './lib/Converter.js';
 (async () => {
     program
         .option('-o, --options [options]', 'PDF options for puppeteer')
+        .option('-l, --launchOptions [launchOptions]', 'Launch Options for puppeteer')
         .parse()
 
     const options = JSON.parse(program.opts().options);
+    const launchOptions = JSON.parse(program.opts().launchOptions);
 
-    const converter = new Converter(await getStdin(), options);
+    const converter = new Converter(await getStdin(), options, launchOptions);
     const buffer = await converter.run();
 
     process.stdout.write(buffer.toString('binary'), 'binary');
