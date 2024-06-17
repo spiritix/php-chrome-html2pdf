@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+## [1.8] - 2024-06-17
+### Added
+- Added launch options 
+
 ## [1.7.6] - 2024-04-04
 ### Fixed
 - Fixed bug related to puppeteer
