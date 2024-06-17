@@ -66,6 +66,26 @@ $converter->setOptions([
     'headerTemplate' => '<p>I am a header</p>',
 ]);
 
+$converter->setLaunchOptions((object)[
+      'ignoreHTTPSErrors' => true, 
+      'headless' => true, 
+      'executablePath' => '/usr/bin/google-chrome-stable', 
+      'args' => [
+        '--no-sandbox',
+        '--disable-web-security',
+        '--font-render-hinting=none',
+        '--proxy-server="direct://"',
+        '--proxy-bypass-list=*',
+        '--media-cache-size=0',
+        '--disk-cache-size=0',
+        '--disable-application-cache',
+        '--disk-cache-dir=/dev/null',
+        '--media-cache-dir=/dev/null'
+      ]
+   ]
+);
+
+
 $output = $converter->convert();
 $output->download('google.pdf');
 ```
