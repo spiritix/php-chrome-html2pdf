@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+## [1.8.1] - 2024-09-05
+### Fixed
+- Fixed bug related to launch options
+
 ## [1.8] - 2024-06-17
 ### Added
 - Added launch options 
