@@ -48,6 +48,31 @@ class ConverterTest extends TestCase
         ], $options);
     }
 
+    public function testLaunchOptions()
+    {
+        $this->converter->setLaunchOption('headless', 'new');
+        $this->converter->setLaunchOptions([
+            'ignoreHTTPSErrors' => true,
+            'executablePath' => '/usr/bin/google-chrome-stable',
+        ]);
+
+        $value = $this->converter->getLaunchOption('headless');
+        $this->assertEquals('new', $value);
+
+        $value = $this->converter->getLaunchOption('ignoreHTTPSErrors');
+        $this->assertTrue($value);
+
+        $value = $this->converter->getLaunchOption('executablePath');
+        $this->assertEquals('/usr/bin/google-chrome-stable', $value);
+
+        $options = $this->converter->getLaunchOptions();
+        $this->assertEquals([
+            'headless' => 'new',
+            'ignoreHTTPSErrors' => true,
+            'executablePath' => '/usr/bin/google-chrome-stable',
+        ], $options);
+    }
+
     public function testNodePath()
     {
         $path = '/path/to/node';

@@ -66,7 +66,7 @@ $converter->setOptions([
     'headerTemplate' => '<p>I am a header</p>',
 ]);
 
-$converter->setLaunchOptions((object)[
+$converter->setLaunchOptions([
       'ignoreHTTPSErrors' => true, 
       'headless' => true, 
       'executablePath' => '/usr/bin/google-chrome-stable', 

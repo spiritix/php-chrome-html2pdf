@@ -71,9 +71,9 @@ class Converter
      * @param InputInterface  $input
      * @param OutputInterface $output
      * @param array           $options Shortcut for setting multiple options
-     * @param array           $launch_args Shortcut for setting puppeeter launch arguments
+     * @param array           $launchOptions Shortcut for setting puppeeter launch arguments
      */
-    public function __construct(InputInterface $input, OutputInterface $output, array $options = [], array $launch_args = [])
+    public function __construct(InputInterface $input, OutputInterface $output, array $options = [], array $launchOptions = [])
     {
         $this->input = $input;
         $this->output = $output;
@@ -81,8 +81,8 @@ class Converter
         if (!empty($options)) {
             $this->setOptions($options);
         }
-        if (!empty($launch_args)) {
-            $this->setLaunchOptions($launch_args);
+        if (!empty($launchOptions)) {
+            $this->setLaunchOptions($launchOptions);
         }
     }
 
@@ -209,13 +209,13 @@ class Converter
     /**
      * Set multiple launchOptions at once.
      *
-     * @param object $launchOptions Multiple launchOptions
+     * @param array $launchOptions Multiple launchOptions
      *
      * @throws ConverterException If launchOptions are empty
      *
      * @return Converter
      */
-    public function setLaunchOptions(object $launchOptions): Converter
+    public function setLaunchOptions(array $launchOptions): Converter
     {
         if (empty($launchOptions)) {
             throw new ConverterException('Provided launchOptions must not be empty');
