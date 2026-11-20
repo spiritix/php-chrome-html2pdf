@@ -2,6 +2,8 @@
 
 A PHP library for converting HTML to PDF using Chrome/Chromium.
 
+> **Discontinued:** I have discontinued this project because AI coding tools make it straightforward to create and adapt small wrappers like this. This library is no longer maintained.
+
 [![PHP Checks](https://github.com/spiritix/php-chrome-html2pdf/actions/workflows/php.yml/badge.svg)](https://github.com/spiritix/php-chrome-html2pdf/actions/workflows/php.yml)
 [![Node.js Checks](https://github.com/spiritix/php-chrome-html2pdf/actions/workflows/js.yml/badge.svg)](https://github.com/spiritix/php-chrome-html2pdf/actions/workflows/js.yml)
 [![Code Climate](https://codeclimate.com/github/spiritix/php-chrome-html2pdf/badges/gpa.svg)](https://codeclimate.com/github/spiritix/php-chrome-html2pdf)
@@ -9,9 +11,6 @@ A PHP library for converting HTML to PDF using Chrome/Chromium.
 [![Latest Stable Version](https://poser.pugx.org/spiritix/php-chrome-html2pdf/v/stable.svg)](https://packagist.org/packages/spiritix/php-chrome-html2pdf)
 [![Latest Unstable Version](https://poser.pugx.org/spiritix/php-chrome-html2pdf/v/unstable.svg)](https://packagist.org/packages/spiritix/php-chrome-html2pdf)
 [![License](https://poser.pugx.org/spiritix/php-chrome-html2pdf/license.svg)](https://packagist.org/packages/spiritix/php-chrome-html2pdf)
-
-_Contributors wanted!
-Have a look at the [open issues](https://github.com/spiritix/php-chrome-html2pdf/issues) and send me an email if you are interested in a quick introduction via Hangouts._
 
 ## How it works
 
