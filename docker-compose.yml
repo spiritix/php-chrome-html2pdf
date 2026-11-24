@@ -5,7 +5,7 @@ services:
     build:
       context: .
     volumes:
-      - .:/usr/src/app
+      - .:/var/www/html
     restart: unless-stopped
     environment:
       UID: ${UID}

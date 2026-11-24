@@ -2,6 +2,16 @@
 
 ## [Unreleased]
 
+## [1.9] - 2026-09-23
+### Added
+- Updated to PHP 8.3
+- Updated to phpunit 12.5
+- Updated to Node.js 22.12
+- Updated to npm 12.1
+- Updated to Puppeteer 25.11
+- Updated a Dockerfile
+- Updated a test JS
+
 ## [1.8.1] - 2024-09-05
 ### Fixed
 - Fixed bug related to launch options
